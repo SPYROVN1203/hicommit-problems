@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - 'template-*'
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  build:
+    uses: ngocdanthanhtvu/hicommit-runner/.github/workflows/c-runner.yml@5c115972e98e05fa7c3089f7f37e08be9d7f3279
+    with:
+      api_base_url: https://hicommit.com/api
