@@ -4,7 +4,7 @@ int main() {
   float dtb;
   int drl;
   int hocluc=0,renluyen=0;
-  scanf("%d",&dtb);
+  scanf("%f",&dtb);
   scanf("%d",&drl);
   if (dtb >= 9.0) hocluc = 1;
   else if (8.0 < (int)dtb < 9.0) hocluc = 2;
