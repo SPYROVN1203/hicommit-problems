@@ -3,18 +3,20 @@
 int main() {
   float dtb;
   int drl;
-  int hocluc=0,renluyen=0;
+  int hocluc,renluyen;
+  
   scanf("%f",&dtb);
   scanf("%d",&drl);
+  
   if (dtb >= 9.0) hocluc = 1;
   else if (dtb >= 8.0 && dtb < 9.0) hocluc = 2;
-  else if (dtb >= 8.0 && dtb < 8.0) hocluc = 3;
-  else hocluc = 4;
+  else if (dtb >= 7.0 && dtb < 8.0) hocluc = 3;
+  else if (dtb < 7.0) hocluc = 4;
 
   if (drl >= 90) renluyen = 1;
-  else if (80 <= drl < 90) renluyen = 2;
-  else if (70 <= drl < 80) renluyen = 3;
-  else renluyen = 4;
+  else if (drl >= 80 && drl < 90) renluyen = 2;
+  else if (drl >= 70 && drl < 80) renluyen = 3;
+  else if (drl < 70) renluyen = 4;
 
   
   if (hocluc == 1 && renluyen == 1){
