@@ -17,13 +17,13 @@ int main() {
   else renluyen = 4;
 
   
-  if (hocluc = 1 && renluyen = 1){
+  if (hocluc == 1 && renluyen == 1){
     printf("HOC_BONG_XUAT_SAC");
   }
-  else if (hocluc = 2 && renluyen <= 2 || hocluc = 1 && renluyen = 2){
+  else if (hocluc == 2 && renluyen <= 2 || hocluc == 1 && renluyen == 2){
     printf("HOC_BONG_GIOI");
   }
-  else if (hocluc = 3 && renluyen <= 3 || hocluc = 2 && renluyen = 3 || hocluc = 1 && renluyen = 3){
+  else if (hocluc == 3 && renluyen <= 3 || hocluc == 2 && renluyen == 3 || hocluc == 1 && renluyen == 3){
     printf("HOC_BONG_KHA");
   }
   else{
