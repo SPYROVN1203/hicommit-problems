@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 int main() {
-  float dtb,drl;
+  float dtb;
+  int drl;
   scanf("%f",&dtb);
-  scanf("%f",&drl);
+  scanf("%d",&drl);
   if (dtb >= 9.0 && drl >= 90){
     printf("HOC_BONG_XUAT_SAC");
   }
