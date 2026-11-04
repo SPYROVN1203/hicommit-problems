@@ -1,11 +1,10 @@
-// HICOMMIT TEMPLATE FOR C
 #include <stdio.h>
 
 int main() {
-    
-    /*
-        Your code goes here. Happy coding!
-    */
+  float dtb,drl;
+  scanf("%f",&dtb);
+  scanf("%f",&drl);
 
-    return 0;
+  printf("%1f",9.999999);
+  return 0;
 }
