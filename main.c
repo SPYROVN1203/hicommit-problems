@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main() {
-  int dtb;
+  float dtb;
   int drl;
   int hocluc=0,renluyen=0;
   scanf("%d",&dtb);
   scanf("%d",&drl);
-  if (dtb >= 9) hocluc = 1;
-  else if (8 < dtb < 9) hocluc = 2;
-  else if (7 <= dtb < 8) hocluc = 3;
+  if (dtb >= 9.0) hocluc = 1;
+  else if (8.0 < (int)dtb < 9.0) hocluc = 2;
+  else if (7.0 <= (int)dtb < 8.0) hocluc = 3;
   else hocluc = 4;
 
   if (drl >= 90) renluyen = 1;
