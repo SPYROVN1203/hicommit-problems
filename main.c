@@ -7,8 +7,8 @@ int main() {
   scanf("%f",&dtb);
   scanf("%d",&drl);
   if (dtb >= 9.0) hocluc = 1;
-  else if (8.0 < (int)dtb < 9.0) hocluc = 2;
-  else if (7.0 <= (int)dtb < 8.0) hocluc = 3;
+  else if (dtb >= 8.0 && dtb < 9.0) hocluc = 2;
+  else if (dtb >= 8.0 && dtb < 8.0) hocluc = 3;
   else hocluc = 4;
 
   if (drl >= 90) renluyen = 1;
@@ -21,7 +21,7 @@ int main() {
     printf("HOC_BONG_XUAT_SAC");
   }
   else if (hocluc == 2 && renluyen <= 2 || hocluc == 1 && renluyen == 2){
-    printf("HOC_BONG_GIOI%d",(int)dtb);
+    printf("HOC_BONG_GIOI);
   }
   else if (hocluc == 3 && renluyen <= 3 || hocluc == 2 && renluyen == 3 || hocluc == 1 && renluyen == 3){
     printf("HOC_BONG_KHA");
